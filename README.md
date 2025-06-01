@@ -1,38 +1,39 @@
-# Sentiment Analysis on Amazon Product Reviews
+# Sentiment Analysis of Shopee COD Reviews
 
 ## 📌 Project Overview
 
-This project focuses on performing sentiment analysis on customer product reviews from Amazon. The main objective is to classify reviews as *positive* or *negative* using machine learning techniques. The notebook contains steps from data preprocessing to model evaluation.
+This project focuses on performing sentiment analysis on *Shopee Cash on Delivery (COD)* customer reviews. The main goal is to classify the sentiment of user reviews into *positive* and *negative* categories using Natural Language Processing (NLP) and machine learning.
 
-The analysis was done using Python on Google Colab, leveraging Natural Language Processing (NLP) methods and machine learning models to understand customer sentiments.
+Key steps in the notebook include:
+- Importing and exploring the dataset
+- Cleaning and preprocessing review texts
+- Converting text to numerical features using TF-IDF
+- Training a Logistic Regression model
+- Evaluating model performance using classification report and confusion matrix
+
+The entire analysis was conducted on *Google Colab* using Python and popular ML libraries such as Scikit-learn and NLTK.
+
 
 ## 📂 Raw Dataset
 
-The dataset used in this project comes from Kaggle and contains product reviews with corresponding star ratings.
+The dataset used contains Shopee product reviews, specifically focused on COD transactions
 
-🔗 [Amazon Product Reviews Dataset on Kaggle](https://www.kaggle.com/datasets/datafiniti/consumer-reviews-of-amazon-products)
+🔗 [https://www.kaggle.com/datasets/alvianardiansyah/dataset-ulasan-pengguna-shopee]
 
 ## 📊 Insight & Findings
 
-- Majority of the reviews in the dataset are *positive* (ratings 4–5).
-- Reviews with ratings 1–2 are considered *negative*.
-- After preprocessing and converting reviews into numerical features using *TF-IDF*, we trained several models.
-- *Logistic Regression* showed the best performance with an *accuracy above 85%*.
-- Key preprocessing steps included:
-  - Removing stopwords
-  - Lowercasing
-  - Tokenization
-  - TF-IDF vectorization
+- *Sentiment Distribution:* Reviews with ratings 4–5 were labeled as *positive, while 1–2 were labeled **negative*. Neutral ratings (3) were excluded.
+- *Data Preprocessing:* Reviews were cleaned by removing special characters, converting to lowercase, and eliminating stopwords.
+- *Model Performance:* Logistic Regression achieved an accuracy of *~89%*, indicating good sentiment classification performance.
+- *Word Frequency Analysis:* Frequently used positive and negative words were identified to understand common customer expressions
 
 ## 🤖 AI Support Explanation
 
-This project integrates AI through the use of:
-- *Natural Language Processing (NLP):* to process and clean raw review text.
-- *Machine Learning (Scikit-learn):* for training classifiers (Logistic Regression, Naive Bayes).
-- *AI-assisted environments:* such as Google Colab, which allows accelerated training and testing.
+The AI capabilities applied in this project include:
+- *Natural Language Processing (NLP):* For text preprocessing, cleaning, and vectorization.
+- *TF-IDF Vectorization:* To numerically represent textual data for machine learning input.
+- *Machine Learning (Logistic Regression):* To classify reviews into sentiment categories.
+- *Google Colab as AI environment:* For scalable and cloud-based computation.
 
-AI techniques helped automate the sentiment labeling process, enabling scalable analysis of thousands of product reviews efficiently.
-
----
 
 📁 For more details, check the full notebook in this repository.
